@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { data } from './data';
+import { data } from './data/index';
 import Layout from './component/Layout';
 import ProductItem from './component/ProductItem';
 import { Store } from './utils/Store';
