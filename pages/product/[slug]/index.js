@@ -2,7 +2,7 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import React, { useContext } from 'react';
-import Layout from '../../component/layout';
+import Layout from '../../component/Layout';
 import data from '../../data';
 import { Store } from '../../utils/Store';
 import { useRouter } from 'next/router';
@@ -12,7 +12,6 @@ export default function ProductScreen() {
   const { query } = useRouter();
   const { slug } = query;
   const product = data.products.find(x => x.slug === slug);
-  console.log(product);
 
   if (!product) {
     return <div>Product Not Found</div>;
@@ -40,7 +39,6 @@ export default function ProductScreen() {
             alt={product.name}
             width={640}
             height={640}
-            layout="fill"
           ></Image>
         </div>
         <div>

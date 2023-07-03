@@ -9,7 +9,9 @@ export default function Layout({ title, children }) {
   return (
     <>
       <Head>
-        <title>{title ? title + ' - Amazona' : 'Amazona'}</title>
+        <title>
+          {title ? title + ' - Assafa Delicacy' : 'Assafa Delicacy'}
+        </title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -18,7 +20,7 @@ export default function Layout({ title, children }) {
         <header>
           <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <Link href="/" className="text-lg font-bold">
-             Assafa Delicacy
+              Assafa Delicacy
             </Link>
             <div>
               <Link href="/cart" className="p-2">
@@ -29,7 +31,7 @@ export default function Layout({ title, children }) {
                   </span>
                 )}
               </Link>
-              <Link href="/login"  className="p-2">
+              <Link href="/login" className="p-2">
                 Login
               </Link>
             </div>
