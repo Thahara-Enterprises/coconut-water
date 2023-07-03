@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   products: [
     {
       name: 'Moti Choor Love',
